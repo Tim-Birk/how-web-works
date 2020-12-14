@@ -1,0 +1,38 @@
+What is HTTP?
+-- Hyper Text Transfer Protocol.  It is a protocol for sending requests and responses between servers.
+
+What is a URL?
+-- Unifirom Resource Location.  It is used to find resources on a particular server depending on its contents
+
+What is DNS?
+-- Domain Name Systems.  Its the friendly name for a particular IP address
+
+What is a query string?
+-- it is the extra information that can be appended to a URL beginning with a ? and followed by key=value pairs separated by &
+
+What are two HTTP verbs and how are they different?
+-- GET and POST.  GET sends parameters directly in the query string and has no side effects.  
+-- POST sends parameters in the request body and is used when side-effects (ie. changing on the requested server) are intended
+
+What is an HTTP request?
+-- An http request can be sent in a variety of ways from a client to a server through various HTTP Methods like GET and POST (for example).  
+
+What is an HTTP response?
+-- A response is what the server sends back to the client that has some kind of payload that was determined by the contents of the request that generated it
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+-- An http header is additional information that can be sent in the http responses and requests.  
+-- Examples of request headers can be authentication information,  Cookie, Accept, etc.  
+-- Examples of Response headers can include access-control-allow-origin, content-encoding, content-type, etc
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+--  The browser finds the IP address to send the request to based on the domain (somesite.com)
+--  The browser sends an http request to that IP address
+--  The server sends back an http response to the browser
+--  The browser renders the DOM and the appropriate html and sends additional requests for any resources thats get sent back in the server response
+
+
+Part 2: Practice Tools
+--  curl -H "Accept: text/plain" https://icanhazdadjoke.com/
+--  dig icanhazdadjoke.com         --  104.27.179.173
+--  opened simplePage.html by right-clicking and using "Open with Live Server" because I do not have Python3 installed yet
